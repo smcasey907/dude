@@ -4,10 +4,23 @@
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-image: url('./assets/the_rug.webp');
+    background-color: #620706;
+
+    .navbar-nav .nav-link {
+        color: #aaa;
+        font-size: 1.25em;
+        text-shadow: 1px 1px 2px #000000;
+    }
+
+    .navbar-nav .active>.nav-link {
+        color: #fff;
+        font-size: 1.25em;
+        text-shadow: 1px 1px 2px #000000;
+    }
 
     .nav-item.icon {
-        padding-block-end: 1vw;
+        padding-right: 4vw;
+
     }
 }
 
@@ -57,7 +70,9 @@
         justify-content: center;
         align-items: center;
         background-image: url('./assets/dudeonrug.jpg');
-        background-repeat: repeat-x;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
 
         .dude-content {
             width: 70vw;
@@ -95,4 +110,5 @@
 
 .footer {
     background-image: url('./assets/the_rug.webp');
+    color: white;
 }
