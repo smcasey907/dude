@@ -114,9 +114,9 @@
     margin: 0px;
 
     .cta-section-mobile {
+        padding: 10px;
         display: none;
         background-color: darkslategray;
-        border-radius: 4px;
         color: #fff;
 
         @media (max-width: 600px) {
