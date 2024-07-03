@@ -13,9 +13,9 @@
     }
 
     .navbar-nav .active>.nav-link {
-        color: #fff;
-        font-size: 1.25em;
-        text-shadow: 1px 1px 2px #000000;
+        color: #fff!important;
+        font-size: 1.25em!important;
+        text-shadow: 1px 1px 2px #000000!important;
     }
 
     .nav-item.icon {
@@ -56,6 +56,35 @@
         color: #faffcf;
         text-shadow: 2px 2px 4px #000000;
         text-align: center;
+    }
+
+    .cta-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .cta-column {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .cta-column h2 {
+        margin-bottom: 15px;
+    }
+
+    .cta-column a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 10px;
+        transition: color 0.3s ease;
+    }
+
+    .cta-column a:hover {
+        color: #ddd;
     }
 }
 
