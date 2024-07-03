@@ -60,6 +60,10 @@
         color: #faffcf;
         text-shadow: 2px 2px 4px #000000;
         text-align: center;
+
+        @media (max-width: 600px) {
+            font-size: 3rem;
+        }
     }
 
     .cta-section {
@@ -71,7 +75,13 @@
         color: #fff;
         position: absolute;
         bottom: 0;
+
+        @media (max-width: 600px) {
+            display: none;
+        }
     }
+
+
 
     .cta-column {
         flex: 1;
@@ -103,8 +113,21 @@
     padding: 0px;
     margin: 0px;
 
+    .cta-section-mobile {
+        display: none;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 4px;
+        color: #fff;
+        margin: 10px;
+
+        @media (max-width: 600px) {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
     .whats-the-dude {
-        height: 100vh;
+        min-height: 100vh;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -122,28 +145,12 @@
             background-color: rgba(255, 255, 249, 0.8);
             border-radius: 4px;
             box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-        }
-    }
 
-    .how-to-get-your-rug {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url('./assets/lebowski_get.webp');
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-
-        .how-content {
-            width: 70vw;
-            padding: 10px;
-            justify-content: center;
-            align-content: center;
-            background-color: rgba(255, 255, 249, 0.8);
-            border-radius: 4px;
-            box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+            @media (max-width: 600px) {
+                width: 100vw;
+                border-radius: 0px;
+                box-shadow: none;
+            }
         }
     }
 }
