@@ -115,10 +115,9 @@
 
     .cta-section-mobile {
         display: none;
-        background-color: rgba(0, 0, 0, 1);
+        background-color: darkslategray;
         border-radius: 4px;
         color: #fff;
-        margin: 10px;
 
         @media (max-width: 600px) {
             display: flex;
