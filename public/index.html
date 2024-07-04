@@ -92,16 +92,7 @@
                 <p>The token is available on JUP and Birdeye, and can be purchased with USDC or SOL.</p>
             </div>
         </div>
-        <!-- <div id="how" class="how-to-get-your-rug">
-            <div class="how-content">
-                <h1>How to Get Your Rug</h1>
-                <p>Getting your rug is easy. Simply download a Solana wallet and purchase DUDE on one of the supported exchanges. Once you have DUDE in your wallet, you can participate in the community by voting on proposals and staking your DUDE to earn rewards.</p>
-                <p>Our community is open to everyone, regardless of their background or experience. We believe that everyone should have the opportunity to participate in the financial markets, and we are committed to building a community that is inclusive and welcoming to all.</p>
-                
-                <sub>Disclaimer: We are not responsible for any rugs that may be lost or stolen. Please rug responsibly.</sub>
-                <sub>Also the information provided on this website does not constitute investment advice, financial advice, trading advice, or any other sort of advice, and you should not treat any of the website's content as such. The tokens available for trade on this website are intended solely for novelty purposes. By participating in the trading of these novelty tokens, you acknowledge and accept that their value may fluctuate significantly. These fluctuations can result in unexpected financial losses. By using this website, you agree that you fully understand and accept these risks. The website and its operators are not liable for any financial losses incurred as a result of trading novelty tokens.
-            </div>
-        </div> -->
+
     </div>
 
     <!-- Footer -->
@@ -114,6 +105,28 @@
     <!-- Include Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCN891YpovHBPW17yNXdgUj7UmC0Glomw4",
+          authDomain: "dudeonsol.firebaseapp.com",
+          projectId: "dudeonsol",
+          storageBucket: "dudeonsol.appspot.com",
+          messagingSenderId: "571408178056",
+          appId: "1:571408178056:web:1c60f2675dbc5377ec383d",
+          measurementId: "G-JRKF2BNBVV"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
